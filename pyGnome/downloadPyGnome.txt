@@ -17,7 +17,19 @@ git clone https://github.com/NOAA-ORR-ERD/PyGnome.git
 
 2.- Install dependencies 
 cd PyGnome
+conda install -c anaconda netcdf4 
+conda install -c conda-forge pyshp 
+conda install -c conda-forge gridded 
+conda install -c conda-forge nbsphinx 
+
+conda list 
+    -- Verify the version number for library netcdf4
+
+edit conda_requirements.txt
+    -- Change pacakges to >= rather than just =
+
 conda install --file conda_requirements.txt
+
 2.5 Install netCDF 
 conda install netCDF4
 sudo apt-get install libhdf5-serial-dev
@@ -29,5 +41,6 @@ cd OilLibrary/
 python setup.py install
 
 4.- Build py_gnome
+cd ../py_gnome
 python setup.py develop
 
