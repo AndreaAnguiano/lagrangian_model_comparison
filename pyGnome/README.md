@@ -1,4 +1,6 @@
 
+# Installation 
+
 ## 0. Creating an environment with python 2.7 
 
   > conda create -n Python27 python=2.7
