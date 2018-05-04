@@ -50,6 +50,10 @@ Add the conda-forge channel
 
 > cd OilLibrary/
 
+ edit conda_requirements.txt, change pacakges to >= rather than just =
+
+> conda install --file conda_requirements.txt
+
 > python setup.py install
 
 ## 4. Build py_gnome
