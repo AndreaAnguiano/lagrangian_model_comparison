@@ -60,6 +60,8 @@ Add the conda-forge channel
 
 > cd ../py_gnome
 
+> conda install -c anaconda cython 
+
 > python setup.py develop
 
 
