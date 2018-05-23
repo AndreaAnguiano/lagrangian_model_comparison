@@ -1,4 +1,3 @@
-
 import os
 from datetime import datetime, timedelta
 from gnome import basic_types, scripting, utilities
@@ -13,5 +12,3 @@ from gnome.environment import GridCurrent
 from gnome.outputters.animated_gif import Animation
 from gnome.movers.py_current_movers import PyCurrentMover
 from gnome.movers.py_wind_movers import PyWindMover
-
-

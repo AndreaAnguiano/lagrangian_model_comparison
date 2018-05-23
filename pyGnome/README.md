@@ -33,6 +33,11 @@ Add the conda-forge channel
 > cd PyGnome
 
  edit conda_requirements.txt, change pacakges to >= rather than just =
+
+ conda install -c anaconda netcdf4 
+ conda install -c conda-forge pyshp 
+ conda install -c conda-forge gridded 
+ conda install -c conda-forge nbsphinx 
  
 > conda install --file conda_requirements.txt
 
@@ -60,7 +65,6 @@ Add the conda-forge channel
 
 > cd ../py_gnome
 
-> conda install -c anaconda cython 
 
 > python setup.py develop
 
