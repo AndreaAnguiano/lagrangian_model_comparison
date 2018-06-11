@@ -5,7 +5,9 @@
 
 > git clone https://github.com/OpenDrift/opendrift.git
 
-## 2. Installing
+## 2. Requirements 
+> conda install --yes hdf4 numpy scipy matplotlib basemap netcdf4 configobj pillow gdal pyproj ffmpeg 
+## 3. Installing
  
 > cd opendrift
 
