@@ -17,7 +17,7 @@ map = 'gulf.bna'
 reFloatHalfLife = -1 # Particles that beach on the shorelines are randomly refloated according to the specified half-life (specified in hours). # If no refloating is desired set this value to -1.
 
 # spill timming
-startDate = datetime(2018,05,01)
+startDate = datetime(2001,01,01)
 duration = timedelta(days=7)
 
 #timestep (s)
@@ -49,8 +49,9 @@ if __name__ == '__main__':
     model = make_model(timeStep,startDate, duration, weatheringSteps, map, uncertain, data_path, reFloatHalfLife, windFile,
                        currFile, tidalFile, num_elements, depths, lat, lon, output_path)
 
-for step in model:
-    #print step
-    print "step: %.4i -- memuse: %fMB" % (step['step_num'],
-                                          utilities.get_mem_use())
+    model.full_run()
+    # for step in model:
+        #print step
+        # print "step: %.4i -- memuse: %fMB" % (step['step_num'],
+        #                                       utilities.get_mem_use())
 
