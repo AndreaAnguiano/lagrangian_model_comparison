@@ -9,15 +9,15 @@ from modelConfig import *
 # data_path = os.path.dirname('/home/andrea/python/lagrangian_model_comparison/pyGnome/oilSpillPyGnome/Data/')
 # output_path = os.path.dirname('/home/andrea/python/lagrangian_model_comparison/pyGnome/oilSpillPyGnome/outputs/')
 
-data_path = os.path.dirname('/home/olmozavala/Dropbox/MyProjects/UNAM/OilSpill_Andrea/lagrangian_model_comparison/pyGnome/oilSpillPyGnome/Data/')
-output_path = os.path.dirname('/home/olmozavala/Dropbox/MyProjects/UNAM/OilSpill_Andrea/lagrangian_model_comparison/pyGnome/oilSpillPyGnome/output/')
+data_path = os.path.dirname('Data/')
+output_path = os.path.dirname('output/')
 
 #define map name
 map = 'gulf.bna'
 reFloatHalfLife = -1 # Particles that beach on the shorelines are randomly refloated according to the specified half-life (specified in hours). # If no refloating is desired set this value to -1.
 
 # spill timming
-startDate = datetime(2001,01,01)
+startDate = datetime(2018,05,01)
 duration = timedelta(days=7)
 
 #timestep (s)
@@ -35,7 +35,7 @@ currFile = 'HYCOM_3d.nc'
 tidalFile = 'VDATUM_EC2001.nc'
 
 # # Elements
-num_elements = 1e5
+num_elements = 100000
 
 # depths
 depths = [0, 400, 1100]
@@ -54,4 +54,4 @@ if __name__ == '__main__':
         #print step
         # print "step: %.4i -- memuse: %fMB" % (step['step_num'],
         #                                       utilities.get_mem_use())
-
+    print("Done!!!")

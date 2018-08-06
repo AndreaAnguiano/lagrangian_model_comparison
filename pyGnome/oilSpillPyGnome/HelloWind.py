@@ -35,7 +35,8 @@ model.map = MapFromBNA(mapfile, refloat_halflife = -1)
 
 print("Adding mover...")
 random_mover = RandomMover()
-windFile = 'GFS_Global_0p5deg.nc'
+# windFile = 'GFS_Global_0p5deg.nc'
+windFile = 'OURS/GFS/gfs.t00z.pgrb2.0p25.f000'
 wind_file = get_datafile(join(data_path, windFile))
 model.movers += GridWindMover(wind_file)
 model.movers += random_mover

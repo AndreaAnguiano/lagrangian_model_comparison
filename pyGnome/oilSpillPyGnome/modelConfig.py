@@ -19,7 +19,8 @@ def make_model(timeStep,start_time, duration, weatheringSteps, map, uncertain, d
                num_elements, depths, lat, lon, output_path):
     #initalizing the model
     print 'initializing the model:'
-    model = Model(time_step = timeStep, start_time= start_time, duration=duration, uncertain = uncertain)
+    # model = Model(time_step = timeStep, start_time= start_time, duration=duration, uncertain = uncertain)
+    model = Model(time_step = timeStep, start_time= start_time, duration=duration)
 
     #adding the map
     print 'adding the map:'

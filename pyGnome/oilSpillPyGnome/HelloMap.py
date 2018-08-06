@@ -42,8 +42,6 @@ spill = Spill(release)
 model.spills += spill
 
 print("Adding renderer...")
-
-
 model.outputters += KMZOutput('./output/gnome_results.kmz', output_timestep=timedelta(hours=6))
 
 renderer = Renderer(output_timestep=timedelta(hours=6),output_dir='./output',
